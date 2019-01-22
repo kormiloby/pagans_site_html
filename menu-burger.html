@@ -1,0 +1,128 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Меню</title>
+	<link rel=“stylesheet” href=“https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css“>
+	
+	
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+	<style type="text/css"> /* ОБЩЕЕ МЕНЮ */					
+.menu-ul{
+  margin: 0 auto;
+  border: 1px solid green;
+  width: 70vw;
+  height: 40px;
+  display: flex;
+  padding: 0px;
+  justify-content: center;
+}
+.menu-li{           
+  text-align: center;
+  list-style: none;
+  padding: 10px;        
+}
+.menu-li a{
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  position: relative;
+  padding: 5px;
+}
+.menu-li a i{
+  margin-right: 10px;
+}
+/* АНИМАЦИЯ ДЛЯ МЕНЮ */
+.menu-li a::before{
+  content: '';
+  width: 0px;
+  height: 3px;
+  background-color: coral;
+  position: absolute;
+  top: 90%;
+  left: 0;
+  transition: .5s;
+  mix-blend-mode: multiply;
+}
+.menu-li a::after{
+  content: '';
+  width: 0px;
+  height: 3px;
+  background-color: orange;
+  position: absolute;
+  top: 90%;
+  right: 0;
+  transition: .5s;
+  mix-blend-mode: multiply;
+}
+.menu-li:hover{
+  background-color: #e5eae8;
+  border-radius: 5px;
+}
+.menu-li:hover a::before{
+  width: 50%;
+  transform: translateX(100%);
+}
+.menu-li:hover a::after{
+  width: 50%;
+  transform: translateX(-100%);
+}
+.menu-li a:hover{
+  color: darkgray;
+}
+.burger {
+  display: none;
+  list-style: none;
+  padding: 4px;
+}
+.burger:hover {        
+  background-color: red;
+}
+.menu-big-size {
+  height: 247px;
+}
+
+@media (max-width: 700px) {
+  .burger {
+    display: flex;
+  }
+  .menu-ul{
+    flex-wrap: wrap;
+    overflow: hidden;
+    transition: 1s;          
+  }
+  .menu-li {
+    width: 100%;
+  }
+
+}
+      
+      </style>
+</head>
+
+<body>
+	<!-- НАЧАЛО МЕНЮ -->
+	<div class="menu">
+		<ul class="menu-ul">
+		    <li class="burger"><button onclick="onOffMenu()"><i class="fas fa-bars fa-2x"></i></button></li>
+			<li class="menu-li"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>Главаная</a></li>
+			<li class="menu-li"><a href="catalog.html"><i class="fa fa-list" aria-hidden="true"></i>Каталог</a></li>
+			<li class="menu-li"><a href="payment.html"><i class="fa fa-money" aria-hidden="true"></i>Оплата и доставка</a></li>
+			<li class="menu-li"><a href="reviews.html"><i class="fa fa-edit" aria-hidden="true"></i>Отзывы</a></li>
+			<li class="menu-li"><a href="contacts.html"><i class="fa fa-user" aria-hidden="true"></i>Контакты</a></li>
+		</ul>		
+	</div>
+	<!-- КОНЕЦ МЕНЮ -->
+	
+	<script>
+  function onOffMenu() {      
+    var menu = document.querySelector('.menu-ul');
+    if(menu.classList.contains('menu-big-size')) {
+      menu.classList.remove('menu-big-size');
+    } else {
+      menu.classList.add('menu-big-size');
+    }    
+  }
+    </script>
+</body>
+</html>

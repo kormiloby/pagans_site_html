@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+	<title>Анкета новичка</title>
+	<style type="text/css">body{
+			border: none;
+			background-color: #e9f4fb;
+			font-family: 'Montserrat', sans-serif;
+		}
+		.container{
+			position: relative;
+			padding: 50px;
+			margin: 50px auto;
+			width: 550px;
+			
+			background-color: white;
+			border-radius: 8px;
+			box-sizing: border-box;
+			border: 2px solid #fe5800;
+		}
+		
+		/* Заголовок */
+		.container h1{
+			text-align: center;
+			color: black;}
+		/* Поля ввода данных */
+		.container .input{
+			display: block;
+			height: 25px;
+			width: 100%;
+			border-radius: 4px;
+			border: 1px solid #e9f4fb;
+			margin-top: 5px;
+			outline: none;
+
+		}
+		.container .input:focus{
+			border: 1px solid #fe5800;
+			background: none;
+			box-shadow: 1px 5px 10px -5px #8cccf5;
+			transition: all 0.5s;
+		}
+		.container label{
+			display: block;
+			color: black;
+			font-size: 14px;
+			padding-left: 10px;
+		}
+		.container textarea{
+			border: 1px solid #e9f4fb;
+			width: 100%;
+			max-width: 100%;
+			max-height: 200px;
+			min-width: 70%;
+			min-height: 100px;
+			margin-top: 5px;
+			border-radius: 4px;
+		}
+		.container textarea:focus{
+			border: 1px solid #fe5800;
+			background: none;
+			box-shadow: 1px 5px 10px -5px #8cccf5;
+			transition: all 0.5s;
+		}
+		/* Кнопка "Отправить" */
+		.input[type=submit] {
+			position: absolute;
+		    background-color: #fe5800;
+		    border: none;
+		    color: white;
+		    font-size: 15px;
+		    text-decoration: none;
+		    margin-left: 100px;
+		    cursor: pointer;
+		    border-radius: 6px;
+		    width: 250px;
+		    height: 35px;
+		}
+		.input[type=submit]:hover{
+			background-color: white;
+			color:black;
+			border: 2px solid #fe5800;
+			font-size: 18px;
+			
+			transition: all 1s;
+		}
+		/* Иконки и место для них */
+		.input[type=text] {
+			padding-left: 25px;
+		}
+		textarea {
+			padding-left: 25px;
+			outline: none;
+		}
+        .container {
+            display: none;
+        }
+	</style>
+</head>
+<body>
+<p><button onclick="onLoginModalWindow()">кнопка</button></p>
+
+<div class="container ">
+<form class="modal-form"><!-- Заголовок -->
+<h1>Анкета новичка</h1>
+<button onclick="offLoginModalWindow()">X</button><!-- Имя -->
+
+<p><label for="name">Имя:</label> <input class="input" id="name" name="name" placeholder="Введите Ваше имя" size="30" type="text" value="" /></p>
+
+<p><label for="name">Фамилия:</label> <input class="input" id="name" name="name" placeholder="Введите Вашу Фамилию" size="30" type="text" value="" /></p>
+<!-- Email -->
+
+<p><label for="mail">Ваш email:</label> <input class="input" id="mail" name="mail" placeholder="Введите адрес Вашей почты" size="30" type="text" value="" /></p>
+<!-- Телефон -->
+
+<p><label for="telephone">Ваш телефон:</label> <input class="input" id="telephone" name="telephone" placeholder="Введите номер телефона" size="30" type="text" value="" /></p>
+
+<p><label for="age">Укажите свой возраст:</label> <input checked="checked" name="age" type="radio" value="1" />до 18<br />
+<input name="age" type="radio" value="1" />18-25 лет<br />
+<input name="age" type="radio" value="1" />Старше 25 лет</p>
+
+<p><input class="input" type="submit" value="Отправить" /></p>
+</form>
+</div>
+<script>    
+var modalWindow;
+  var background;
+  function onLoginModalWindow() {
+    modalWindow = document.querySelector('.container');
+    modalWindow.style.display = 'block';
+//    background = document.querySelector('.main-container');
+//    background.style.filter = "blur(10px)";
+  }  
+  function offLoginModalWindow() {
+    modalWindow = document.querySelector('.container');
+    modalWindow.style.display = 'none';
+//    background = document.querySelector('.main-container');
+//    background.style.filter = "none";
+  }     
+</script></body>
+</html>

@@ -1,0 +1,134 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+  <title>home-page</title>
+  <meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:600" rel="stylesheet">
+<style>
+
+*{box-sizing: border-box;}
+
+body{ 
+margin: 0;}
+
+.home-image{max-width: 100%;
+height: 100%;}
+
+
+
+
+
+
+
+
+.promo-video{position: absolute;
+ top: 66%;
+ left: 10%;}
+
+ 
+
+.menu-main {
+  list-style: none;
+    
+    text-align: left;
+  
+}
+.menu-main li {display: inline-block;}
+
+.menu-main li:last-child:after {content: none;}
+.menu-main  a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a:hover{color: #fe5800;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #fe5800;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main :before {left: 0;}
+.menu-main a:hover:after, .menu-main :after {right: 0;}  
+
+
+
+.image-logo{width: 100px;
+height: 50px; 
+margin-top: 20px;
+}
+
+
+ .wrapper-out-block {
+        background-image: url('https://pp.userapi.com/c837225/v837225456/5cc9b/9074E_07ubg.jpg');
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-attachment: fixed;
+        width: 100%;
+        min-height: 185px;
+        margin: 0;
+    }
+
+
+@media (max-width: 550px) {
+.menu-main {padding-top: 0; text-align: center;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+
+
+
+</style>
+
+</head>
+	<body>
+
+<div class="home-image" style="background-image: url(https://pp.userapi.com/c837225/v837225456/5cc9b/9074E_07ubg.jpg); background-repeat: no-repeat; background-size: cover;background-position: center center;">
+	
+<nav>
+
+<ul class="menu-main">
+<li class="image-logo" ><img src="https://dl.dropbox.com/s/mmaf17qptwejzpr/Layer%207%20%D0%BA%D0%BE%D0%BF%D0%B8%D1%8F.png"></li>
+        <li><a href="https://dl.dropbox.com/s/nayfua9ze79dj7p/home%20page.html">Главная</a></li>
+        <li><a href="https://dl.dropbox.com/s/yuxvq0qhgsa6pc3/history-one_page.html">О нас</a></li>
+        <li><a href="#">Команда</a></li>
+        <li><a href="#">Галерея</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Контакты</a></li>
+</ul>
+
+</nav>
+
+  	
+    		<div class="promo-video">
+				<video width="400" height="300" controls>
+					<source src="https://dl.dropbox.com/s/4s98ijuk2t5pnbv/Pagans%20-%20%D0%9F%D0%B0%D0%B3%D0%B0%D0%BD%D1%86%D1%8B.mp4" type="">
+			</video>
+		</div>
+  </div>
+  <div class="wrapper-out-block"></div>
+	</body>
+</html> 
+
+
