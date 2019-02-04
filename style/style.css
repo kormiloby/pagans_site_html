@@ -1,5 +1,3 @@
-
-
 /*_______/ ГЛАВНАЯ СТРАНИЦА _______/*/
 @font-face {
   font-family: 'icomoon';
@@ -31,21 +29,19 @@
 color: black;}
 
 .centralContent { 
-    max-width: 1280px;
-    margin: 0 auto ;}
+    /*max-width: 1280px;*/
+    width: 100%;
+    margin: 0 auto ;
+}
 
 
 /* МЕНЮ */
-.navbar{ 
+.navbar {
     position: relative;
-    
     margin-bottom: 0;
     background-color: black;
-    z-index: 5;}
-
-
-
-
+    z-index: 5;
+}
 
 .container {
     margin-right: auto;
@@ -54,67 +50,79 @@ color: black;}
     padding-right: 15px;
 }
 
-.navbar-header{margin-right: 0;
-    margin-left: 0}
-
-
+.navbar-header {
+    margin-right: 0;
+    margin-left: 0
+}
 
 .menu-main {
   list-style: none;
-    
-    
-  
 }
-.menu-main li {display: inline-block;}
 
-.menu-main li:last-child:after {content: none;}
-.menu-main  a {
-  text-decoration: none;
- 
-  letter-spacing: 2px;
-  position: relative;
-  padding-bottom: 20px;
-  margin: 0 34px 0 30px;
-  font-size: 17px;
-  
-  text-transform: uppercase;
-  display: inline-block;
-  transition: color .2s;
+.menu-main li {
+    display: inline-block;
+    vertical-align: middle;
 }
-.menu-main a, .menu-main a:visited {color: white;}
-.menu-main a:hover{color: #fe5800;}
+
+.menu-main li:last-child:after {
+    content: none;
+}
+
+.menu-main  a {
+    text-decoration: none;
+    letter-spacing: 2px;
+    position: relative;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+
+.menu-main a,
+.menu-main a:visited {
+    color: white;
+}
+
+.menu-main a:hover {
+    color: #fe5800;
+}
+
 .menu-main a:before,
 .menu-main a:after {
-  content: "";
-  position: absolute;
-  height: 4px;
-  top: auto;
-  right: 50%;
-  bottom: -5px;
-  left: 50%;
-  background: #fe5800;
-  transition: .8s;
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #fe5800;
+    transition: .8s;
 }
-.menu-main a:hover:before, .menu-main :before {left: 0;}
-.menu-main a:hover:after, .menu-main :after {right: 0;}  
+.menu-main a:hover:before,
+.menu-main :before {
+    left: 0;
+}
 
+.menu-main a:hover:after,
+.menu-main :after {
+    right: 0;
+}
 /* МЕНЮ */
 
 
 .image-logo{width:69px; height:39px;}
 
-
-
-
-
-
-.header{padding: 0px;
-margin: 0px;}
+.header{
+    padding: 0px;
+    margin: 0px;
+}
 
 .header__image {
-  display: block;
-  margin: 0 auto;  
-  width: 100%; 
+    display: block;
+    margin: 0 auto;
+    width: 100%;
 }
 
 
@@ -643,24 +651,22 @@ width: 40%;}
 /*_________ ВТОРАЯ СТРАНИЦА О КОМАНДЕ______*/
 
 /*  ЗАГОЛОВОК СТРАНИЦЫ   */
-
- .header_two_history {
-        background-image: url('../Image/image19.jpg');
-          background-size: 100% 100%;
-        background-repeat: no-repeat;
-        background-position: 0 0;
-        background-attachment: fixed;
-        width: 100%;
-        min-height: 370px;
-        margin: 0;
+.header_two_history {
+    background-image: url('../Image/image19.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-attachment: fixed;
+    width: 100%;
+    min-height: 370px;
+    margin: 0;
     z-index: 80;
-   
-        
-    }
+}
 
 
-.bio{ font-family: 'Montserrat', sans-serif;
-font-size: 40px;
+.bio{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
     text-transform: uppercase;
     color: #fff;
     line-height: 1;
@@ -670,63 +676,63 @@ font-size: 40px;
     top: 160px;
     left: 0;
     width: 100%;
-    z-index: 90;}
-
-
-
-/*  ЗАГОЛОВОК СТРАНИЦЫ   */
-
-
- /*________ПЕРВЫЙ БЛОК-ИСТОРИИ_________*/ 
-.text__one-central_Content{background: #fff;
-    position: relative;
     z-index: 90;
-    display: inline-block;
-    width: 100%;}
-
-
-
-.one-central_Content__year{ width: 395px;
-    float: left;} 
-
-.one-central_Content__year .two_history_conten_years {
-   font-family: 'Montserrat', sans-serif;
- font-size: 140px;
-    letter-spacing: -8px;
-    color: #000;
-    margin-left: 75px;
-   
-    line-height: 1;
 }
 
 
-.one-history__text{
+/*  ЗАГОЛОВОК СТРАНИЦЫ   */
+ /*________ПЕРВЫЙ БЛОК-ИСТОРИИ_________*/ 
+.text__one-central_Content {
+    background: #fff;
+    position: relative;
+    z-index: 90;
+    display: inline-block;
+    width: 100%;
+}
+
+.one-central_Content__year {
+    width: 395px;
+    float: left;
+}
+
+.one-central_Content__year .two_history_conten_years {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 140px;
+    letter-spacing: -8px;
+    color: #000;
+    margin-left: 75px;
+    line-height: 1;
+}
+
+.one-history__text {
     width: 668px;
     float: right;
     padding: 41px 80px 82px 30px;
-font-family: 'Montserrat', sans-serif;}
-
-
+    font-family: 'Montserrat', sans-serif;
+}
 
 .image__before-one-history {
-  width: 100%; height: auto;
-  display: block;
-   }
+    width: 100%;
+    height: auto;
+    display: block;
+}
 
-   /*________ПЕРВЫЙ БЛОК-ИСТОРИИ_________*/ 
+/*________ПЕРВЫЙ БЛОК-ИСТОРИИ_________*/
 
 
 /*________ВТООРОЙ БЛОК-ИСТОРИИ_________*/ 
 .two-central_Content {
     max-width: 1280px;
-        
-    margin: auto;}
+    margin: auto;
+}
 
-.text__two-central_Content{background: #fff;
+.text__two-central_Content{
+    background: #fff;
     position: relative;
     z-index: 90;
     display: inline-block;
-    width: 100%;}
+    width: 100%;
+}
 
 
 
@@ -1754,14 +1760,6 @@ text-align: center;}
 
 /*_______________АДАПТАЦИЯ ГЛАВНОЙ СТРАНИЦЫ ______________*/
 
-@media (max-width: 1280px) {
-.menu-main {padding-top: 0; text-align: center;}
-.menu-main li {display: block;}
-.menu-main li:after {content: none;}
-.menu-main a {
-  padding: 25px 0 20px; 
-  margin: 0 30px;
-}
 
 .header__image {width: 100%;}
 }
