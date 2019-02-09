@@ -1,0 +1,87 @@
+.modal-form {
+    display: block;
+    position: fixed;
+    top: 33%;
+    left: 47%;
+    margin-top: -150px;
+    margin-left: -150px;
+    padding: 50px;
+    padding-top: 0px; 
+    max-width: 550px;
+    background-color: white;
+    border-radius: 8px;
+    box-sizing: border-box;
+    border: 2px solid #fe5800;
+}
+
+/* Заголовок */
+.modal-form h1 {
+    text-align: center;
+    color: black;
+}
+
+/* Поля ввода данных */
+.modal-form .input {
+    display: block;
+    height: 25px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #e9f4fb;
+    margin-top: 5px;
+    outline: none;
+}
+
+.modal-form .input:focus {
+    border: 1px solid #fe5800;
+    background: none;
+    box-shadow: 1px 5px 10px -5px #8cccf5;
+    transition: all 0.5s;
+}
+
+.modal-form label {
+    display: block;
+    color: black;
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.modal-form textarea {
+    border: 1px solid #e9f4fb;
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
+    min-width: 70%;
+    min-height: 100px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.modal-form textarea:focus {
+    border: 1px solid #fe5800;
+    background: none;
+    box-shadow: 1px 5px 10px -5px #8cccf5;
+    transition: all 0.5s;
+}
+
+/* Кнопка "Отправить" */
+button.input {
+    position: absolute;
+    background-color: #fe5800;
+    border: none;
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    margin-left: 15px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 65% !important;
+    height: 35px;
+}
+
+button:hover.input {
+    background-color: white;
+    color:black;
+    border: 2px solid #fe5800;
+    font-size: 18px;
+    transition: all 1s;
+}
